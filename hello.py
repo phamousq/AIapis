@@ -1,5 +1,11 @@
+import os
+
+from dotenv import load_dotenv
+
+
 def main():
-    print("Hello from aiapis!")
+    load_dotenv()
+    print(os.getenv("API_KEY"))
 
 
 if __name__ == "__main__":
